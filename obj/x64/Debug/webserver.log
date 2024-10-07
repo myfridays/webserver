@@ -1,0 +1,39 @@
+﻿  正在验证源
+  正在将源远程复制到“172.16.172.26”
+  正在验证体系结构
+  正在验证体系结构
+  正在启动远程生成
+  正在编译源:
+  webserver_v2.c
+D:\Linux_vs\webserver\webserver_v2.c(86,33): warning : implicit declaration of function ‘http_request’ [-Wimplicit-function-declaration]
+D:\Linux_vs\webserver\webserver_v2.c(86,33): warning :    86 |                                 http_request(sockfd, epfd);
+D:\Linux_vs\webserver\webserver_v2.c(86,33): warning :       |                                 ^~~~~~~~~~~~
+D:\Linux_vs\webserver\webserver_v2.c(127,21): warning : conversion from ‘ssize_t’ {aka ‘long int’} to ‘int’ may change value [-Wconversion]
+D:\Linux_vs\webserver\webserver_v2.c(127,21): warning :   127 |                 n = read(fd, buf, sizeof(buf));
+D:\Linux_vs\webserver\webserver_v2.c(127,21): warning :       |                     ^~~~
+D:\Linux_vs\webserver\webserver_v2.c(135,41): warning : conversion to ‘size_t’ {aka ‘long unsigned int’} from ‘int’ may change the sign of the result [-Wsign-conversion]
+D:\Linux_vs\webserver\webserver_v2.c(135,41): warning :   135 |                         write(cfd, buf, n);
+D:\Linux_vs\webserver\webserver_v2.c(135,41): warning :       |                                         ^
+D:\Linux_vs\webserver\webserver_v2.c(169,13): warning : conversion from ‘ssize_t’ {aka ‘long int’} to ‘int’ may change value [-Wconversion]
+D:\Linux_vs\webserver\webserver_v2.c(169,13): warning :   169 |         n = Readline(cfd, buf, sizeof(buf));
+D:\Linux_vs\webserver\webserver_v2.c(169,13): warning :       |             ^~~~~~~~
+D:\Linux_vs\webserver\webserver_v2.c(195,29): warning : conversion from ‘ssize_t’ {aka ‘long int’} to ‘int’ may change value [-Wconversion]
+D:\Linux_vs\webserver\webserver_v2.c(195,29): warning :   195 |                 while ((n = Readline(cfd, buf, sizeof(buf))) > 0)
+D:\Linux_vs\webserver\webserver_v2.c(195,29): warning :       |                             ^~~~~~~~
+D:\Linux_vs\webserver\webserver_v2.c(201,37): warning : conversion from ‘ssize_t’ {aka ‘long int’} to ‘int’ may change value [-Wconversion]
+D:\Linux_vs\webserver\webserver_v2.c(201,37): warning :   201 |                                 n = Readline(cfd, buf, sizeof(buf));
+D:\Linux_vs\webserver\webserver_v2.c(201,37): warning :       |                                     ^~~~~~~~
+D:\Linux_vs\webserver\webserver_v2.c(208,41): warning : passing argument 1 to ‘restrict’-qualified parameter aliases with argument 2 [-Wrestrict]
+D:\Linux_vs\webserver\webserver_v2.c(208,41): warning :   208 |                                 strncpy(password, password, 6);
+D:\Linux_vs\webserver\webserver_v2.c(208,41): warning :       |                                         ^~~~~~~~  ~~~~~~~~
+D:\Linux_vs\webserver\webserver_v2.c(256,21): warning : conversion from ‘ssize_t’ {aka ‘long int’} to ‘int’ may change value [-Wconversion]
+D:\Linux_vs\webserver\webserver_v2.c(256,21): warning :   256 |         while ((n = Readline(cfd, buf, sizeof(buf))) > 0);
+D:\Linux_vs\webserver\webserver_v2.c(256,21): warning :       |                     ^~~~~~~~
+D:\Linux_vs\webserver\webserver_v2.c(277,79): warning : conversion from ‘__off_t’ {aka ‘long int’} to ‘int’ may change value [-Wconversion]
+D:\Linux_vs\webserver\webserver_v2.c(277,79): warning :   277 |                         send_hander(cfd, "200", "OK", get_mime_type(pFile), st.st_size);
+D:\Linux_vs\webserver\webserver_v2.c(277,79): warning :       |                                                                             ~~^~~~~~~~
+D:\Linux_vs\webserver\webserver_v2.c(329,1): warning : control reaches end of non-void function [-Wreturn-type]
+D:\Linux_vs\webserver\webserver_v2.c(329,1): warning :   329 | }
+D:\Linux_vs\webserver\webserver_v2.c(329,1): warning :       | ^
+  正在链接对象
+  webserver.vcxproj -> D:\Linux_vs\webserver\bin\x64\Debug\webserver.out
